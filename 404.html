@@ -41,7 +41,7 @@
 <meta property="og:description" content="Content by David Fisco">
 <meta property="og:site_name" content="David Fisco">
 
-<meta property="article:modified_time" content="2013-12-09T21:35:28-05:00">
+<meta property="article:modified_time" content="2013-12-10T10:09:17-05:00">
 
 
 <!-- <meta property="fb:admins" content="FACEBOOK NUMBERIC ID"> -->
@@ -155,7 +155,30 @@
     
     <div class='container'>
         <div id='before-payload-fisco'></div>
-        <div id='payload-fisco'><div id="not-found">
+        <div id='payload-fisco'><script>
+    if (window.location.search == '?q=node/23') {
+        window.location.href = 'http://generalapps.davidfisco.com/synonymical/play';
+        return;
+    }
+    if (window.location.search == '?q=node/27') {
+        window.location.href = 'http://generalapps.davidfisco.com/dcw';
+        return;
+    }
+    if (window.location.search == '?q=node/143') {
+        window.location.href = 'http://productivity.davidfisco.com/2007/12/gtd-desktop-wallpaper-version-10.html';
+        return;
+    }
+    if (window.location.search == '?q=node/109') {
+        window.location.href = 'http://productivity.davidfisco.com/2010/02/simple-calc-workbook-for-gtd-version-11.html';
+        return;
+    }
+    // Redirect home page:
+    /* if ((document.location.host === 'www.davidfisco.com') && (document.location.pathname === '/')) {
+        window.location.href = 'http://www.davidfisco.com/p/home-page.html';
+        return;
+    } */
+</script>
+<div id="not-found">
     <div class='container'>
         <div class='row'>
             <div class='col-md-3'>
