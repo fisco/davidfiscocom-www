@@ -44,7 +44,7 @@
 <meta property="og:description" content="Content by David Fisco">
 <meta property="og:site_name" content="David Fisco">
 
-<meta property="article:modified_time" content="2015-08-26T14:56:58-04:00">
+<meta property="article:modified_time" content="2015-08-26T20:17:42-04:00">
 
 
 <!-- <meta property="fb:admins" content="FACEBOOK NUMBERIC ID"> -->
@@ -646,18 +646,24 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
 
         ga && jQueryObject || _goToSearchPage(searchUrl);
 
-        submitObject.hitCallback = function() {
-            _goToSearchPage(searchUrl);
+        try {
+          ga.getAll();
+          submitObject.hitCallback = function() {
+              _goToSearchPage(searchUrl);
+          }
+          submitObject.hitType = "event";
+          submitObject.eventCategory = jQueryObject.attr("id");
+          submitObject.eventAction = "search";
+          submitObject.eventLabel = jQueryObject.find("input.form-control").val();
+          ga("send", submitObject);
+        } catch (err) {
+          _goToSearchPage(searchUrl);
         }
-        submitObject.hitType = "event";
-        submitObject.eventCategory = jQueryObject.attr("id");
-        submitObject.eventAction = "search";
-        submitObject.eventLabel = jQueryObject.find("input.form-control").val();
-        ga("send", submitObject);
     }
 
     $("#missing-search-form-page").submit(function(event) {
-        reportGoogleAnalyticsSearchEvent($(this), "https://www.google.com/search?q=" + encodeURIComponent($(this).find("input.form-control").val()) + "+site%3A" + "davidfisco.com"), event.preventDefault();
+        event.preventDefault();
+        reportGoogleAnalyticsSearchEvent($(this), "https://www.google.com/search?q=" + encodeURIComponent($(this).find("input.form-control").val()) + "+site%3A" + "davidfisco.com");
     });
 })();
 </script>
