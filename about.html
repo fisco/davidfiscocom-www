@@ -278,8 +278,6 @@ iframe.googleDoc {
     margin-bottom: 0; /* optional */
 }
 
-
-
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   #site-bar-row-1 .fisco-brand {
@@ -470,13 +468,15 @@ jQuery(function($) {
 </script>
 <!-- End Google Analytics -->
 
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+
     
 
-    <link rel="dns-prefetch" href="//dl.dropboxusercontent.com">
     <link rel="dns-prefetch" href="//disqus.com">
 
     <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"WebPage","@id":"#pageSchema","accountablePerson":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"author":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"copyrightHolder":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"creator":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"editor":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"genre":"non-fiction","about":{"@type":"Thing","description":"Content by David Fisco"},"audience":{"@type":"Audience","audienceType":["cooks","chefs"]},"breadcrumb":{"@type":"BreadcrumbList","@id":"#breadcrumblist"},"mainContentOfPage":{"@type":"WebPageElement","@id":"#mainContentOfPage"},"specialty":{"@type":"Specialty","name":[""]},"reviewedBy":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"}}
+      {"@context":"https://schema.org","@type":"WebPage","@id":"#pageSchema","accountablePerson":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"author":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"copyrightHolder":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"creator":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"editor":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"genre":"non-fiction","about":{"@type":"Thing","description":"Content by David Fisco"},"audience":{"@type":"Audience","audienceType":[]},"breadcrumb":{"@type":"BreadcrumbList","@id":"#breadcrumblist"},"mainContentOfPage":{"@type":"WebPageElement","@id":"#mainContentOfPage"},"specialty":{"@type":"Specialty","name":[""]},"reviewedBy":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"}}
     </script>
 
     
@@ -693,18 +693,28 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
       <div class="col-xs-12">
         <p><img class="image-pulled-right img-responsive pull-right" src="images/sepia_stacked.png" /></p>
 
-<ul id="authorInfoContactPopoverContent-5" hidden="">
+<div id="authorInfoContactPopoverContent-5" hidden="">
+  
+    <p style="margin-bottom: 0;"><strong>Info:</strong></p>
+    <ul>
+      
+      
+        <li><a href="https://twitter.com/davidfisco" title="Twitter page">Twitter page</a></li>
+      
+    </ul>
   
   
-    <li><a href="https://twitter.com/davidfisco" title="Twitter page">Twitter page</a></li>
+    <p style="margin-bottom: 0;"><strong>Contact:</strong></p>
+    <ul>
+      
+        <li><a href="" title="Contact by webpage">Contact by webpage</a></li>
+      
+      
+        <li><a href="mailto:dave@davidfisco.com?subject=Feedback+from+website" title="Send email">Send email</a></li>
+      
+    </ul>
   
-  
-    <li><a href="" title="Contact by webpage">Contact by webpage</a></li>
-  
-  
-    <li><a href="mailto:dave@davidfisco.com?subject=Feedback+from+website" title="Send email">Send email</a></li>
-  
-</ul>
+</div>
 
 <script>
   $(function () {
@@ -715,7 +725,7 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
         return $("#authorInfoContactPopoverContent-5").html();
       },
       title: function() {
-        return "<b>Info and contact: David Fisco</b>";
+        return "<b>Info &amp; contact: David Fisco</b>";
       },
       viewport: function() {
         return $('#payload-fisco');
@@ -725,8 +735,9 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
 </script>
 
 
-<p><a href="#" role="button" data-container="body" data-trigger="click" data-placement="auto" data-toggle="popover" onmouseover="$(this).attr('title', 'Author information');" id="authorInfoContactPopover-5">David Fisco</a>
- is a polymath who develops new media and software for the Internet. He is a tech journalist, practitioner and programmer who consults to companies in the technical and communication areas. His programming literacy includes C, PHP, Python, Java, JavaScript, SQL, Bash, HTML and CSS. He enjoys picking at regular expressions.</p>
+<p><a href="#" role="button" data-container="body" data-trigger="click" data-placement="auto" data-toggle="popover" onmouseover="$(this).attr('title', 'Author information');" id="authorInfoContactPopover-5">David Fisco</a></p>
+
+<p>is a polymath who develops new media and software for the Internet. He is a tech journalist, practitioner and programmer who consults to companies in the technical and communication areas. His programming literacy includes C, PHP, Python, Java, JavaScript, SQL, Bash, HTML and CSS. He enjoys picking at regular expressions.</p>
 
 <p>He was the founding Editor-in-Chief of <em>Java Report</em> (SIGS Publications, NYC), and created and served as host for <a href="http://www.idg.com/">IDG</a>’s <em>Streaming JavaWorld</em>, a webcast about trends in software development. Dave was a Contributing Editor and consultant to EarthWeb, Inc., a contributor to Developer.com, a blogger for the IEEE and a book columnist for <em>Datamation</em> magazine.</p>
 
@@ -927,18 +938,14 @@ $(document).ready(function() {
 
 
     
-      <div class='text-center' style="clear: both; margin-top: 2em;">
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-  <div style="font-size: 1.8em; line-height: initial;"><a href="#" onclick='window.location.href="mailto:?subject="+document.title+"&body="+encodeURI(document.location);' title="Email link to page"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></div>
-  <div><a href="https://twitter.com/share" class="twitter-share-button" data-via="davidfisco" data-show-count="false">Tweet</a></div>
-  <div class="fb-like" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      <div class="a2a_kit a2a_kit_size_20 a2a_default_style" style="display: flex; justify-content: center; margin-top: .5rem;">
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    <a class="a2a_button_email" title="Send page by email"></a>
+    <a class="a2a_button_facebook" title="Share on Facebook"></a>
+    <a class="a2a_button_twitter" title="Share on Twitter"></a>
+    <a class="a2a_button_google_plus" title="Share on Google+"></a>
+    <a class="a2a_button_linkedin" title="Share on LinkedIn"></a>
+    <a class="a2a_button_reddit" title="Share on reddit"></a>
 </div>
 
     
