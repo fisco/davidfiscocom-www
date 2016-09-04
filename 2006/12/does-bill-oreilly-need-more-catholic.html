@@ -789,28 +789,21 @@ excludePublicationDateInformation: true/false, default false
 
 
 
-  <table id="pubInfoTable" style="white-space: nowrap;" hidden="">
-    <tbody>
+  <dl id="pubInfoTable" hidden="">
     
-      <tr>
-        <td style="padding-right: .5em;">Published:</td>
-        <td style="font-weight: 700;"> 6 December 2006</td>
-      </tr>
+      <dt>Published:</dt>
+      <dd style="margin-left: 1rem;"> 6 December 2006</dd>
     
     
-      <tr>
-        <td style="padding-right: .5em;">Modified:</td>
-        <td style="font-weight: 700;">25 July 2011</td>
-      </tr>
+      <dt>Modified:</dt>
+      <dd style="margin-left: 1rem;">25 July 2011</dd>
     
     
-      <tr>
-        <td style="padding-right: .5em;">Last reviewed:</td>
-        <td style="font-weight: 700;">25 July 2011</td>
-      </tr>
+      <dt>Last reviewed:</dt>
+      <dd style="margin-left: 1rem;">25 July 2011</dd>
     
-    </tbody>
-  </table>
+  </dl>
+
 
   <button class="btn btn-default" data-container="body" data-toggle="popover" data-trigger="click hover" data-placement="auto" id="pubInfoPopover">
           <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -892,6 +885,41 @@ excludePublicationDateInformation: true/false, default false
 
 
       
+      
+
+
+
+
+
+
+<dl id="readingTime" hidden="">
+  <dt>Word count:</dt>
+  <dd style="margin-left: 1rem;">315</dd>
+  <dt>Estimated reading time:</dt>
+  <dd style="margin-left: 1rem;">1 minute</dd>
+</dl>
+
+<button class="btn btn-default" data-container="body" data-toggle="popover" data-trigger="click hover" data-placement="auto" id="pubReadingTimePopover">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+</button>
+
+<script>
+  $(function () {
+    $("#pubReadingTimePopover").popover({
+      html: true,
+      content: function() {
+        return $("#readingTime").html();
+      },
+      title: function() {
+        return "<b>Reading Time</b>";
+      },
+      viewport: function() {
+        return $('#payload-fisco');
+      }
+    });
+  });
+</script>
+
       
         <button class="a2a_dd btn btn-default" href="https://www.addtoany.com/share">
   <i class="fa fa-share-alt" aria-hidden="true"></i>
