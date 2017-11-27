@@ -3,7 +3,7 @@
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
@@ -26,7 +26,7 @@
 <meta property="og:title" content="‘Twas The Night Before A Primary...">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.davidfisco.com/2008/01/twas-night-before-primary.html">
-<meta property="og:image" content="https://www.davidfisco.com/icons/icon-apple.png">
+<meta property="og:image" content="">
 <meta property="og:description" content="Content by David Fisco">
 <meta property="og:site_name" content="David Fisco">
 <meta property="article:published_time" content="2008-01-01T17:17:00-05:00">
@@ -52,6 +52,7 @@
     <style>
 
 body {
+    margin-top: 2vh;
     padding-bottom: 2em;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -236,20 +237,12 @@ iframe.googleDoc {
     text-align: right;
 }
 
-.copyright-fisco {
-  text-align: center;
-}
-
 #site-header-breadcrumbs div.inactive span.addCaret::after {
     color: grey;
     content: ">";
     margin-left: .5em;
     margin-right: .5em;
     font-size: .9em;
-}
-
-#site-header-breadcrumbs {
-  text-align: center;
 }
 
 #searchDavidFiscoDialogLabel {
@@ -321,6 +314,10 @@ iframe.googleDoc {
      }
    }
 
+   #payload-fisco {
+     margin-top: 3vh;
+   }
+
   #payload-fisco h1 {
     font-size: 2.3rem;
   }
@@ -330,7 +327,7 @@ iframe.googleDoc {
     font-style: italic;
   }
 
-  #payload-fisco h3 {
+  #payload-fisco :not(div.popover) h3 {
     font-size: 1.9rem;
   }
 
@@ -475,14 +472,35 @@ jQuery(function($) {
 
     <link rel="dns-prefetch" href="//disqus.com">
 
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"WebPage","@id":"#pageSchema","accountablePerson":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"author":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"copyrightHolder":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"creator":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"editor":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"genre":"non-fiction","about":{"@type":"Thing","description":"Content by David Fisco"},"audience":{"@type":"Audience","audienceType":[]},"breadcrumb":{"@type":"BreadcrumbList","@id":"#breadcrumblist"},"mainContentOfPage":{"@type":"WebPageElement","@id":"#mainContentOfPage"},"specialty":{"@type":"Specialty","name":[""]},"reviewedBy":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"}}
-    </script>
+    
+
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","@id":"#pageSchema","accountablePerson":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"author":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"copyrightHolder":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"creator":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"editor":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"},"genre":"non-fiction","about":{"@type":"Thing","description":"Content by David Fisco"},"audience":{"@type":"Audience","audienceType":[]},"breadcrumb":{"@type":"BreadcrumbList","@id":"#breadcrumblist"},"mainContentOfPage":{"@type":"WebPageElement","@id":"#mainContentOfPage"},"specialty":{"@type":"Specialty","name":[""]},"reviewedBy":{"@type":"Person","@id":"https://www.davidfisco.com/about.html#davidfisco","name":"David Fisco"}}
+</script>
+
 
     
 
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700?text=DavidFisco" rel="stylesheet">
+
+    <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.www.davidfisco.com","*.foodie.davidfisco.com","*.personal-wikis.davidfisco.com","*.philosophy.davidfisco.com","*.productivity.davidfisco.com"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.davidfisco.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stats.davidfisco.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
 
 </head>
 
@@ -490,106 +508,7 @@ jQuery(function($) {
 
   <div  class="container">
 
-    <div id="fisco-page-header">
-  <div class="row">
-  <div class="col-xs-12">
-    <div style="height: 1.5vh;"></div>
-  </div>
-</div>
-<div class="row" id="site-bar-row-1">
-  <div class="col-xs-12 col-sm-10">
-    <div style="display: inline-block; vertical-align: bottom;"><div class="dropdown pull-left">
-  <button class="btn btn-default dropdown-toggle" style="margin-right: .4em" title="Site menu" type="button" id="siteDropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a class="accentuate-fisco" href="http://www.davidfisco.com/about.html">About David Fisco...</a></li>
-    <li role="separator" class="divider"></li>
-    <li class="dropdown-header accentuate-fisco">Site Topics</li>
-    <li><a href="http://generalapps.davidfisco.com/dcw">Dave's Choice Words</a></li>
-    <li><a href="http://generalapps.davidfisco.com/dcw/sort">Dave's Choice Words: Sort!</a></li>
-    <li><a href="http://foodie.davidfisco.com">Foodie</a></li>
-    <li><a href="http://languagearts.davidfisco.com/">Language Arts</a></li>
-    <li><a href="http://personal-wikis.davidfisco.com">Personal Wikis</a></li>
-    <li><a href="http://philosophy.davidfisco.com/">Philosophy (Objectivism)</a></li>
-    <li><a href="http://productivity.davidfisco.com/">Productivity</a></li>
-    <li><a href="http://rote.davidfisco.com/">Rote: Shakespeare</a></li>
-    <li><a href="http://software.davidfisco.com/">Software</a></li>
-    <li><a href="http://generalapps.davidfisco.com/synonymical/play">Synonmical</a></li>
-    <li role="separator" class="divider"></li>
-    <li class="dropdown-header accentuate-fisco">Contact</li>
-    <li><a href="mailto:dave@davidfisco.com">Email David Fisco</a></li>
-    <li><a href="https://docs.google.com/a/davidfisco.com/forms/d/1owZHNQmZIrgWpuz3G6peKm-9JV8Ulypz4K5VLTdHen8/viewform" target="_blank">Email David Fisco via Web Form</a></li>
-    <li role="separator" class="divider"></li>
-    <li class="dropdown-header" style="font-size: 1.2em; font-weight: bold; color: black;">Social media</li>
-    <li id='david-fisco-on-google-plus'>
-      <a class='' href='https://plus.google.com/116734396562610707415' title='Follow David Fisco on Google+'>
-        Google+
-      </a>
-    </li>
-    <li><a href="https://twitter.com/davidfisco">Twitter</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a class="accentuate-fisco" href="#" onclick="event.preventDefault(); $('#searchDavidFiscoDialog').modal('show');">Search...</a></li>
-  </ul>
-</div>
-</div>
-    <div style="display: inline-block;
-                vertical-align: bottom;
-                line-height: 100%;">
-                <a href="https://www.davidfisco.com/about.html" class="fisco-brand" style="color: inherit;
-                                                                                           font-size: 2.1rem;
-                                                                                           font-family: 'Alegreya Sans SC', sans-serif;
-                                                                                           font-weight: 700;
-                                                                                           text-decoration: inherit;">
-                  <span style="color: silver;">David</span><span>Fisco</span>
-                </a></div>
-  </div>
-  <div class="col-sm-2 text-right visible-sm visible-md visible-lg"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#searchDavidFiscoDialog" title="Search DavidFisco.com">
-  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-</button>
-<!-- Modal -->
-<div class="modal fade" id="searchDavidFiscoDialog" tabindex="-1" role="dialog" aria-labelledby="searchDavidFiscoDialogLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="searchDavidFiscoDialogLabel">Search DavidFisco.com</h4>
-      </div>
-      <div class="modal-body">
-        <form class="fisco-site-search-form" id="site-search-form">
-          <input type="text" class="form-control" id="searchDavidFiscoDialogInput" placeholder="Search terms">
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="searchDavidFiscoDialogSearchButton">Search</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-$('#searchDavidFiscoDialog').on('shown.bs.modal', function () {
-  $('#searchDavidFiscoDialogInput').focus()
-});
-
-$('#searchDavidFiscoDialogSearchButton').on('click', function () {
-  $('#site-search-form').submit();
-});
-
-$('#searchDavidFiscoDialogInput').on('keyup', function (e) {
-  if (e.keyCode==13) {
-		$('#site-search-form').submit();
-	}
-});
-</script>
-</div>
-</div>
-
-  
-
-
-
+    
 
 
 <!-- Determine type of page. One of "regular", "topic" or "homepage" -->
@@ -600,42 +519,80 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
 
 
 
-<div class="row">
-  <div class="col-xs-12">
-    <div style="height: .6vh; min-height: 6px;"></div>
-  </div>
-</div>
 
-<!-- 9 -->
-<div class="row" id="site-header-breadcrumbs" itemid="#breadcrumblist" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <style>
+    a.page-title-in-breadcrumbs-fisco {
+      color: inherit;
+      cursor: default;
+      display: block;
+      font-size: 2rem;
+      line-height: normal;
+      text-decoration: inherit;
+    }
+    .breadcrumb-minor-fisco {
+      text-transform: uppercase;
+    }
+    #site-header-breadcrumbs-wrapper i.fa-angle-double-right {
+      color: #999999;
+    }
+    @media (min-width: 550px) {
+      a.page-title-in-breadcrumbs-fisco {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+
+  <!-- 9 -->
   
-    <div class="col-xs-12">
-      <div class="inactive" style="background-color: #f5f5f5; border-radius: 4px; padding: .5em;">
-        <span class="addCaret" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a itemprop="item" href="https://www.davidfisco.com/" title="David Fisco's homepage">
-            <span itemprop="name">
-              Home
-            </span>
-          </a>
-          <meta itemprop="position" content="10" />
+  <div class="row">
+  <div class="col-xs-12" id="site-header-breadcrumbs-wrapper" style="margin-top 1vh;">
+    <a class="toggle-site-sidebar-fisco" title="Toggle Site Menu"><i class="fa fa-bars" aria-hidden="true" style="cursor: pointer;"></i></a>
+    <a class="breadcrumb-minor-fisco highlight-with-toggle-site-sidebar-fisco toggle-site-sidebar-fisco" style="cursor: pointer;" title="Toggle Site Menu">MENU</a>
+    <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span>
+    <span class="breadcrumbs-with-title-fisco" id="site-header-breadcrumbs" itemid="#breadcrumblist" itemscope itemtype="https://schema.org/BreadcrumbList">
+      
+      
+        <span class="home-breadcrumb-fisco breadcrumb-minor-fisco" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://www.davidfisco.com/" title="David Fisco's homepage"><span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="10" />
+            
         </span>
         
-      </div>
-    </div>
-  
-  
-  <div class="col-xs-12" style="margin-top: 1em;">
-    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <span id='fisco-page-title-in-breadcrumb' itemprop="name">
-        <a itemprop="item" href="https://www.davidfisco.com/2008/01/twas-night-before-primary.html" style="color: inherit; text-decoration: inherit; cursor: default; font-size: 2.5rem;" title="Title of current page">
-           ‘Twas The Night Before A Primary…
-        </a>
-        <meta itemprop="position" content="11" />
-      </span>
+      
+      
+        <span class="title-breadcrumb-fisco" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span id='fisco-page-title-in-breadcrumb' itemprop="name">
+             <span> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </span> 
+            <a itemprop="item" class="page-title-in-breadcrumbs-fisco" href="https://www.davidfisco.com/2008/01/twas-night-before-primary.html" title="Title of current page">
+              ‘Twas The Night Before A Primary…
+            </a>
+            <meta itemprop="position" content="11" />
+          </span>
+        </span>
+      
     </span>
   </div>
-  
-</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+  {
+    "@id": "#pageSchema",
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "‘Twas The Night Before A Primary…"
+  }
+  </script>
+
+
 
 
 
@@ -647,22 +604,12 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
     "@id": "#pageSchema",
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": " ‘Twas The Night Before A Primary…"
+    "headline": "‘Twas The Night Before A Primary…"
   }
   </script>
 
 
 
-
-
-  <script type="application/ld+json">
-  {
-    "@id": "#pageSchema",
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "headline": " ‘Twas The Night Before A Primary…"
-  }
-  </script>
 
 
 
@@ -680,16 +627,13 @@ $('#searchDavidFiscoDialogInput').on('keyup', function (e) {
 
 
 
-</div>
 
-
-    <span id='before-payload-fisco'></span>
+    <span id="before-payload-fisco"></span>
 
     <main class="row"
           id='payload-fisco'
           itemid="#mainContentOfPage"
-          itemscope itemtype="https://schema.org/WebPageElement"
-          style="margin-top: 1.1rem;">
+          itemscope itemtype="https://schema.org/WebPageElement">
       <div class="col-xs-12">
         <!--
 excludeByLine: true/false, default false
@@ -700,12 +644,25 @@ excludePublicationDateInformation: true/false, default false
 
 
 
+<style>
+  .bare-buttons-fisco button {
+    border: 0;
+  }
+  .bare-buttons-fisco button:first-of-type {
+    padding-left: 2px;
+  }
+  .bare-buttons-fisco button:hover {
+    background: inherit;
+  }
+</style>
 
-<div class="row bottom-align-row" style="margin-bottom: 1rem;">
-    <div class="col-sm-6 col-xs-12" style="font-size: .9rem;">
-      <div style="vertical-align: bottom;">
+
+
+<div class="row" style="margin-top: 1.4vh; margin-bottom: 2vh;">
+    <div class="col-xs-12 bare-buttons-fisco" style="font-size: .9rem;">
+      <div style="">
         
-          by 
+          <div class="div-for-author"><b>Written by 
 
 
 
@@ -744,7 +701,7 @@ excludePublicationDateInformation: true/false, default false
     <p style="margin-bottom: 0;"><strong>Contact:</strong></p>
     <ul>
       
-        <li><a href="" title="Contact by webpage">Contact by webpage</a></li>
+        <li><a href="https://docs.google.com/a/davidfisco.com/forms/d/e/1FAIpQLSdJu7rT0xvoAd7YobyuoLWVacAcooQXnGtsPKtJmmr_mtcx2g/viewform" title="Contact by webpage">Contact by webpage</a></li>
       
       
         <li><a href="mailto:dave@davidfisco.com?subject=Feedback+from+website" title="Send email">Send email</a></li>
@@ -772,16 +729,10 @@ excludePublicationDateInformation: true/false, default false
 </script>
 
 <a href="#" role="button" data-container="body" data-trigger="click" data-placement="auto" data-toggle="popover" onmouseover="$(this).attr('title', 'Author information');" id="authorInfoContactPopover-3">David Fisco</a>
-
+</b></div>
         
-      </div>
-    </div>
-    <div class="col-sm-1 col-xs-12" style="font-size: .9rem;">
-      <div style="min-height: .25rem"></div>
-    </div>
-    <div class="articleMetadata col-sm-5 col-xs-12" style="font-size: .9rem;">
-      
         
+          <div>
 
 
 
@@ -804,10 +755,7 @@ excludePublicationDateInformation: true/false, default false
     
   </dl>
 
-
-  <button class="btn btn-default" data-container="body" data-toggle="popover" data-trigger="click hover" data-placement="auto" id="pubInfoPopover">
-          <i class="fa fa-calendar" aria-hidden="true"></i>
-  </button>
+  <a tabindex="0" role="button" data-toggle="popover" data-trigger="click focus hover" id="pubInfoPopover"> 1 January 2008</a>
 
   <script>
     $(function () {
@@ -832,6 +780,8 @@ excludePublicationDateInformation: true/false, default false
 
 
 
+
+
   <script type="application/ld+json">
   {
     "@id": "#pageSchema",
@@ -845,6 +795,9 @@ excludePublicationDateInformation: true/false, default false
 
 
 
+
+
+
   <script type="application/ld+json">
   {
     "@id": "#pageSchema",
@@ -853,6 +806,9 @@ excludePublicationDateInformation: true/false, default false
     "datePublished": "2008-01-01"
   }
   </script>
+
+
+
 
 
 
@@ -873,6 +829,9 @@ excludePublicationDateInformation: true/false, default false
 
 
 
+
+
+
   <script type="application/ld+json">
   {
     "@id": "#pageSchema",
@@ -883,27 +842,43 @@ excludePublicationDateInformation: true/false, default false
   </script>
 
 
-
-      
-      
-
-
+</div>
+        
+        <div>
 
 
 
 
-<dl id="readingTime" hidden="">
+
+
+<!-- <dl id="readingTime" hidden>
   <dt>Word count:</dt>
   <dd style="margin-left: 1rem;">432</dd>
   <dt>Estimated reading time:</dt>
   <dd style="margin-left: 1rem;">2 minutes</dd>
-</dl>
+</dl> -->
 
-<button class="btn btn-default" data-container="body" data-toggle="popover" data-trigger="click hover" data-placement="auto" id="pubReadingTimePopover">
+<!-- <button class="btn btn-default"
+        data-container="body"
+        data-toggle="popover"
+        data-trigger="click hover"
+        data-placement="auto"
+        id="pubReadingTimePopover">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-</button>
+</button> -->
+
+<a tabindex="0" role="button" data-content=" 2 minutes" data-toggle="popover" data-trigger="click focus hover" id="pubReadingTimePopover">Word count: 432</a>
 
 <script>
+  $(function() {
+    $('#pubReadingTimePopover').popover({
+      html: true,
+      title: function() {
+        return "<b>Estimated reading time:</b>";
+      }
+    });
+  });
+/*
   $(function () {
     $("#pubReadingTimePopover").popover({
       html: true,
@@ -917,30 +892,18 @@ excludePublicationDateInformation: true/false, default false
         return $('#payload-fisco');
       }
     });
-  });
+  }); */
 </script>
-
-      
-        <button class="a2a_dd btn btn-default" href="https://www.addtoany.com/share">
+</div>
+        
+          <div><a class="a2a_dd" href="https://www.addtoany.com/share">
   <i class="fa fa-share-alt" aria-hidden="true"></i>
-</button>
-
-      
+</a>
+</div>
+        
+        </div>
     </div>
   </div>
-
-
-<style>
-  .articleMetadata {
-    text-align: right;
-  }
-
-  @media (max-width: 767px) {
-    .articleMetadata {
-      text-align: left;
-    }
-  }
-</style>
 
 
 
@@ -961,11 +924,14 @@ excludePublicationDateInformation: true/false, default false
 
 
 
+
+
+
 <script type="application/ld+json">
   {
     "@id": "#blogPostingSchema",
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "WebPage",
     "headline": "‘Twas The Night Before A Primary…"
   }
   </script>
@@ -984,11 +950,14 @@ excludePublicationDateInformation: true/false, default false
   
 
 
+
+
+
 <script type="application/ld+json">
   {
     "@id": "#blogPostingSchema",
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "WebPage",
     "dateCreated": "2008-01-01"
   }
   </script>
@@ -998,11 +967,14 @@ excludePublicationDateInformation: true/false, default false
   
 
 
+
+
+
 <script type="application/ld+json">
   {
     "@id": "#blogPostingSchema",
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "WebPage",
     "datePublished": "2008-01-01"
   }
   </script>
@@ -1015,11 +987,14 @@ excludePublicationDateInformation: true/false, default false
   
 
 
+
+
+
 <script type="application/ld+json">
   {
     "@id": "#blogPostingSchema",
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "WebPage",
     "dateModified": "2011-07-25"
   }
   </script>
@@ -1032,11 +1007,14 @@ excludePublicationDateInformation: true/false, default false
 
 
 
+
+
+
 <script type="application/ld+json">
   {
     "@id": "#blogPostingSchema",
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "WebPage",
     "articleBody": "\n‘Twas the night before a primary and all through the landNot a true Conservative was running; none was on hand.All the voting booths were prepped with delicate careFor torrents of Republicans who might not be there.The Democrats were nestled all smug in their beds,While visions of Hillary’s collectivism danced in their heads.I finished reading Coulter’s latest column then turned on TVAnd settled myself down for a night of reverie,When out on the lawn there arose such a clatter,I switched off Fox News to see what was the matter.Away to the window I flew like a flash,I tore open the shutters and threw up the sash.When what to my wondering eyes should appear,But the specter of President Reagan, strong and clear.With a glimmer in his eye and a step without slackI knew that the Father of Modern Conservatism was back!“Why so grim, sullen one?” the former president said.To which I replied, “Visions of gloom dance in my head.The party you held dear is so terribly off track,In a time when at any moment the country could be under attack.David Vitter’s in a whorehouse; Larry Craig, a bathroom stall,Schwarzenegger’s talking ‘global warming,’ faux Conservatives, all!Mitt Romney tries to resemble you, right down to the hairBut when it comes to taxes and social issues, who can say what’s really there?Giuliani treats his wives in a way that’s rather crassAnd Huckabee seems to say, ‘Limited government? My ass!’Ron Paul is a nut who has earned the title of RINO...What are we to do? The primary is tomorrow!”“Enough of your pessimism,” the Gipper shot with a snap.“A negative state of mind is a self-imposed booby trap.Never judge a political philosophy by any one actorSuch assessment is the stock-and-trade of a brainless detractor.Things could be better...well, that’s always true:Concentrate not on your worst fears, but on what America can do.Saddam is a goner, the surge makes victory there for the taking,And in General Petraeus, the country has a president in the making.While you must endure Pelosi and her incessant claptrapAt least Cynthia McKinney is gone, and I doubt she’s coming back.Prominent Democrats are on the record maligning our troopsUltimately this will destroy the Libs, Kerry proved most voters aren’t dupes.In droves, Americans have turned off CNNAnd from Fox News they get their information time and again.“So be not depressed by the current state of Conservatism:The strongest period of nationalism follows the most intransigent schism.”And laying a finger aside of his nose,The president gave me a nod and my spirit rose.But I heard Reagan say, as he faded from sight,“Keep listening to Rush Limbaugh, and all will be Right.”\n\n"
   }
   </script>
@@ -1048,11 +1026,14 @@ excludePublicationDateInformation: true/false, default false
 
 
 
+
+
+
 <script type="application/ld+json">
   {
     "@id": "#blogPostingSchema",
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "WebPage",
     "wordCount": "432"
   }
   </script>
@@ -1067,11 +1048,14 @@ excludePublicationDateInformation: true/false, default false
   
 
 
+
+
+
 <script type="application/ld+json">
   {
     "@id": "#blogPostingSchema",
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "WebPage",
     "copyrightYear": "2008"
   }
   </script>
@@ -1082,11 +1066,14 @@ excludePublicationDateInformation: true/false, default false
   
 
 
+
+
+
 <script type="application/ld+json">
   {
     "@id": "#blogPostingSchema",
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "WebPage",
     "license": "https://www.davidfisco.com/2008/01/twas-night-before-primary.html#fiscocopyright"
   }
   </script>
@@ -1102,10 +1089,13 @@ excludePublicationDateInformation: true/false, default false
 
 
 
+
+
+
       </div>
     </main>
 
-    <span id='after-payload-fisco'></span>
+    <span id="after-payload-fisco"></span>
 
     
 
@@ -1113,7 +1103,7 @@ excludePublicationDateInformation: true/false, default false
 
 
     
-      <div class="a2a_kit a2a_kit_size_20 a2a_default_style" style="display: flex; justify-content: center; margin-top: .5rem;">
+      <div class="a2a_kit a2a_kit_size_20 a2a_default_style" style="display: flex; margin-top: 2rem;">
     <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
     <a class="a2a_button_email" title="Send page by email"></a>
     <a class="a2a_button_facebook" title="Share on Facebook"></a>
@@ -1135,9 +1125,11 @@ excludePublicationDateInformation: true/false, default false
 
 
 
-<p class='copyright-fisco full-copyright'>Copyright &copy; 2008 - 2016 by . All rights reserved worldwide. Requests for licensing and distribution can be emailed to
+<p class='copyright-fisco full-copyright'>Copyright &copy; 2008 - 2017 by David Fisco. All rights reserved worldwide. Requests for licensing and distribution can be emailed to
   <a name="fiscocopyright" href='mailto:dave@davidfisco.com?subject=copyright+inquiry'>David Fisco</a>.
 </p>
+
+
 
 
 
@@ -1152,6 +1144,9 @@ excludePublicationDateInformation: true/false, default false
     "copyrightYear": "2008"
   }
   </script>
+
+
+
 
 
 
@@ -1175,10 +1170,52 @@ excludePublicationDateInformation: true/false, default false
 
     </div>
 
-    <!-- JavaScript: bottom of page for performance reasons. -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script>
+  </div>
+
+  
+  <!-- Modal -->
+<div class="modal fade" id="searchDavidFiscoDialog" tabindex="-1" role="dialog" aria-labelledby="searchDavidFiscoDialogLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="searchDavidFiscoDialogLabel">Search DavidFisco.com</h4>
+      </div>
+      <div class="modal-body">
+        <form class="fisco-site-search-form" id="site-search-form">
+          <input type="text" class="form-control" id="searchDavidFiscoDialogInput" placeholder="Search terms">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="searchDavidFiscoDialogSearchButton">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$('#searchDavidFiscoDialog').on('shown.bs.modal', function () {
+  $('#searchDavidFiscoDialogInput').focus()
+});
+
+$('#searchDavidFiscoDialogSearchButton').on('click', function () {
+  $('#site-search-form').submit();
+});
+
+$('#searchDavidFiscoDialogInput').on('keyup', function (e) {
+  if (e.keyCode==13) {
+		$('#site-search-form').submit();
+	}
+});
+</script>
+
+
+  <!-- JavaScript: bottom of page for performance reasons. -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script>
 $(document).on('click', function (e) {
     $('[data-toggle="popover"],[data-original-title]').each(function () {
         //the 'is' for buttons that trigger popups
@@ -1191,7 +1228,7 @@ $(document).on('click', function (e) {
 });
 </script>
 
-    <script>
+  <script>
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -1200,9 +1237,9 @@ $(document).on('click', function (e) {
 //# sourceMappingURL=http://underscorejs.org/underscore-min.map
 </script>
 
-    
+  
 
-    <script async>
+  <script async>
     (function() {
         "use strict";
 
@@ -1237,7 +1274,7 @@ $(document).on('click', function (e) {
     })();
 </script>
 
-    <script async>
+  <script async>
   try {
     (function() {
       var afterPrint = function() {
@@ -1254,8 +1291,187 @@ $(document).on('click', function (e) {
     }());
   } catch (e) {}
 </script>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8" async></script>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <style>
+    #site-panel-fisco {
+        z-index: 2;
+    }
+
+    .site-button-common-fisco {
+        border: 1px black solid;
+        font-variant: small-caps;
+        font-weight: 900;
+        box-shadow: -5px -5px 12px -3px #CCC;
+    }
+
+    #floating-site-button-fisco {
+        position: fixed;
+        bottom: 2px;
+        right: 2px;
+    }
+
+    #floating-site-button-fisco .david-fisco,
+    #site-button-fisco .david-fisco {
+        color: darkgray;
+    }
+
+    #site-panel-fisco .ul-head-fisco {
+        font-variant: small-caps;
+    }
+
+    #site-panel-fisco ul {
+        padding-left: 10%;
+    }
+
+    #site-panel-fisco-handle {
+        display: flex;
+        font-size: 1vw;
+        height: 100%;
+        /* 100% Full-height */
+        width: 2vw;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        cursor: pointer;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background-color: #DEDEDE;
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+    }
+
+    @media (max-width: 767px) {
+      #site-panel-fisco-handle {
+        display: none;
+      }
+    }
+
+    .sidepanel-heading a {
+        font-weight: bold;
+    }
+
+    .sidepanel-heading a:before {
+        font-family: FontAwesome;
+        content: "\f078";
+        padding-right: .7em;
+    }
+
+    .sidepanel-heading a.collapsed:before {
+        content: "\f054";
+    }
+</style>
+
+<script>
+/*! slidereveal - v1.1.2 - 2016-05-16
+* https://github.com/nnattawat/slidereveal
+* Copyright (c) 2016 Nattawat Nonsung; Licensed MIT */
+!function(a){var b=function(a,b){var c=a.css("padding-"+b);return c?+c.substring(0,c.length-2):0},c=function(a){var c=b(a,"left"),d=b(a,"right");return a.width()+c+d+"px"},d=function(b,c){var d={width:250,push:!0,position:"left",speed:300,trigger:void 0,autoEscape:!0,show:function(){},shown:function(){},hidden:function(){},hide:function(){},top:0,overlay:!1,zIndex:1049,overlayColor:"rgba(0,0,0,0.5)"};this.setting=a.extend(d,c),this.element=b,this.init()};a.extend(d.prototype,{init:function(){var b=this,d=this.setting,e=this.element,f="all ease "+d.speed+"ms";e.css({position:"fixed",width:d.width,transition:f,height:"100%",top:d.top}).css(d.position,"-"+c(e)),d.overlay&&(e.css("z-index",d.zIndex),b.overlayElement=a("<div class='slide-reveal-overlay'></div>").hide().css({position:"fixed",top:0,left:0,height:"100%",width:"100%","z-index":d.zIndex-1,"background-color":d.overlayColor}).click(function(){b.hide()}),a("body").prepend(b.overlayElement)),e.data("slide-reveal",!1),d.push&&a("body").css({position:"relative","overflow-x":"hidden",transition:f,left:"0px"}),d.trigger&&d.trigger.length>0&&d.trigger.on("click.slideReveal",function(){e.data("slide-reveal")?b.hide():b.show()}),d.autoEscape&&a(document).on("keydown.slideReveal",function(c){0===a("input:focus, textarea:focus").length&&27===c.keyCode&&e.data("slide-reveal")&&b.hide()})},show:function(b){var d=this.setting,e=this.element,f=this.overlayElement;(void 0===b||b)&&d.show(e),d.overlay&&f.show(),e.css(d.position,"0px"),d.push&&("left"===d.position?a("body").css("left",c(e)):a("body").css("left","-"+c(e))),e.data("slide-reveal",!0),(void 0===b||b)&&setTimeout(function(){d.shown(e)},d.speed)},hide:function(b){var d=this.setting,e=this.element,f=this.overlayElement;(void 0===b||b)&&d.hide(e),d.push&&a("body").css("left","0px"),e.css(d.position,"-"+c(e)),e.data("slide-reveal",!1),(void 0===b||b)&&setTimeout(function(){d.overlay&&f.hide(),d.hidden(e)},d.speed)},toggle:function(a){var b=this.element;b.data("slide-reveal")?this.hide(a):this.show(a)},remove:function(){this.element.removeData("slide-reveal-model"),this.setting.trigger&&this.setting.trigger.length>0&&this.setting.trigger.off(".slideReveal"),this.overlayElement&&this.overlayElement.length>0&&this.overlayElement.remove()}}),a.fn.slideReveal=function(b,c){return void 0!==b&&"string"==typeof b?this.each(function(){var d=a(this).data("slide-reveal-model");"show"===b?d.show(c):"hide"===b?d.hide(c):"toggle"===b&&d.toggle(c)}):this.each(function(){a(this).data("slide-reveal-model")&&a(this).data("slide-reveal-model").remove(),a(this).data("slide-reveal-model",new d(a(this),b))}),this}}(jQuery);
+</script>
+
+<div class="avoid-premature-rendering-fisco" hidden>
+<div class="toggle-site-sidebar-fisco"
+     id="site-panel-fisco-handle"
+     style="color: #337ab7; flex-direction: column; justify-content: space-between; padding-bottom: 2vh; padding-top: 2vh;"
+     title="Toggle Site Menu">
+  <div><i class="fa fa-bars" aria-hidden="true"></i></div>
+  <div>
+    <i class="fa fa-chevron-right" aria-hidden="true"></i><br />
+    <i class="fa fa-chevron-right" aria-hidden="true"></i><br />
+    <i class="fa fa-chevron-right" aria-hidden="true"></i>
   </div>
+  <div style="margin-top: 2vh;">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+</div>
+<div id="site-panel-fisco" style="background-color: #EEE; font-size: .8rem; padding: 1vh; padding-left: 2vh;">
+  <div class="text-right" style="padding-right: 1rem;">
+    <div onclick="$('#site-panel-fisco').slideReveal('hide');"
+         style="color: #337ab7; cursor: pointer; font-size: 2em;"
+         title="Close Sidebar [ESC]"><i class="fa fa-times" aria-hidden="true"></i></div></div>
+  <div style="font-variant: small-caps; font-weight: 900; font-size: 1.5em;"><span class="david-fisco" style="color: darkgray;">DAVID</span><span class="fisco-fisco">FISCO</span></div>
+  <div style="margin-top: 1.5vh;"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<a href="http://www.davidfisco.com/about.html">About David Fisco...</a></div>
+  <div><i class="fa fa-search" aria-hidden="true"></i>&nbsp;<a href="#" onclick="event.preventDefault(); $('#searchDavidFiscoDialog').modal('show');">Search site...</a></div>
+  <div class="sidepanel-heading" style="margin-top: 1.5vh;"><a class="ul-head-fisco"
+                                                              data-toggle="collapse"
+                                                              data-target="#topicsSidebarPanel"
+                                                              aria-expanded="false"
+                                                              aria-controls="topicsSidebarPanel">SITE TOPICS</a></div>
+  <div class="collapseableSidebarPanel" id="topicsSidebarPanel">
+    <ul>
+      <li><a href="http://generalapps.davidfisco.com/dcw">Dave's Choice Words</a></li>
+      <li><a href="http://generalapps.davidfisco.com/dcw/sort">Dave's Choice Words: Sort!</a></li>
+      <li><a href="http://foodie.davidfisco.com">Foodie</a></li>
+      <li><a href="http://languagearts.davidfisco.com/">Language Arts</a></li>
+      <li><a href="http://personal-wikis.davidfisco.com">Personal Wikis</a></li>
+      <li><a href="http://philosophy.davidfisco.com/">Philosophy (Objectivism)</a></li>
+      <li><a href="http://productivity.davidfisco.com/">Productivity</a></li>
+      <li><a href="http://rote.davidfisco.com/">Rote: Shakespeare</a></li>
+      <li><a href="http://software.davidfisco.com/">Software</a></li>
+      <li><a href="http://generalapps.davidfisco.com/synonymical/play">Synonmical</a></li>
+    </ul>
+  </div>
+  <div class="sidepanel-heading"><a class="ul-head-fisco"
+                                    data-toggle="collapse"
+                                    data-target="#contactSidebarPanel"
+                                    aria-expanded="false"
+                                    aria-controls="contactSidebarPanel">CONTACT</a></div>
+  <div class="collapseableSidebarPanel" id="contactSidebarPanel">
+    <ul>
+      <li><a href="mailto:dave@davidfisco.com">Email David Fisco</a></li>
+      <li><a href="https://docs.google.com/a/davidfisco.com/forms/d/1owZHNQmZIrgWpuz3G6peKm-9JV8Ulypz4K5VLTdHen8/viewform" target="_blank">Email David Fisco via Web Form</a></li>
+    </ul>
+  </div>
+  <div class="sidepanel-heading"><a class="ul-head-fisco"
+                                    data-toggle="collapse"
+                                    data-target="#socialmediaSidebarPanel"
+                                    aria-expanded="false"
+                                    aria-controls="socialmediaSidebarPanel">SOCIAL MEDIA</a></div>
+  <div class="collapseableSidebarPanel" id="socialmediaSidebarPanel">
+    <ul>
+      <li id='david-fisco-on-google-plus'>
+        <a class='' href='https://plus.google.com/116734396562610707415' title='Follow David Fisco on Google+'>
+          Google+
+        </a>
+      </li>
+      <li><a href="https://twitter.com/davidfisco">Twitter</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<script>
+$(function($) {
+  var slider = $("#site-panel-fisco").slideReveal({
+    trigger: $(".toggle-site-sidebar-fisco"),
+    push: false
+  });
+  $(".avoid-premature-rendering-fisco").show();
+
+  $('.collapseableSidebarPanel').collapse();
+});
+
+/* Use classes and CSS to underline all tagged links to the site menu. */
+document.addEventListener("DOMContentLoaded", function () {
+  var sidebarRevealers = document.querySelectorAll(".toggle-site-sidebar-fisco");
+  sidebarRevealers.forEach(function(element) {
+    element.addEventListener("mouseover", function() {
+      document.querySelectorAll(".highlight-with-toggle-site-sidebar-fisco").forEach(function(toUnderline) {
+        toUnderline.style.textDecoration = "underline";
+      });
+    });
+    element.addEventListener("mouseout", function() {
+      document.querySelectorAll(".highlight-with-toggle-site-sidebar-fisco").forEach(function(toUnderline) {
+        toUnderline.style.textDecoration = "none";
+      });
+    });
+  });
+});
+</script>
+
 
 </body>
 

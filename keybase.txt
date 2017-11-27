@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/davidfisco
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://davidfisco.com
+  * I am davidfisco (https://keybase.io/davidfisco) on keybase.
+  * I have a public key with fingerprint EBA9 CABD 859E D217 2F16  2C15 B23E A9A4 6826 CDF7
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010102c3e92e7d1af9043612960931df76d3919aab85754bac7b0f69afaf003bc0310a",
+            "fingerprint": "eba9cabd859ed2172f162c15b23ea9a46826cdf7",
+            "host": "keybase.io",
+            "key_id": "b23ea9a46826cdf7",
+            "kid": "010102c3e92e7d1af9043612960931df76d3919aab85754bac7b0f69afaf003bc0310a",
+            "uid": "da6f929d76f24d4e55089ae65b7cd819",
+            "username": "davidfisco"
+        },
+        "service": {
+            "hostname": "davidfisco.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1481254347,
+    "expire_in": 157680000,
+    "prev": "5c4edcb221e63bc98d83609e76be2c9570fafd505889c486077ff9e6c7be1a92",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.60
+Comment: https://keybase.io/crypto
+
+yMInAnicrVJrSBVBGL1mJQpSGiQpga1mUCa7s8+5ZaRRmUlBD5XSbrM7s97B693r
+7t6bogZSRE+JHhZYUhliEWT0oyeVZlFE0QN60UsiCKJS0oge1KzUr/rZzI9hvjnn
+zPkOX19yvC8pruBY4cfPrciNu9XTFvWVF0+91cDpFq7n/A1cNRk5SAgTxw1UU8z5
+OV5gGxgigYCoWEAm5CVREQBUeCgK2FQVLEIBIqRrsipLOjJUnTcViExk8ryoG7wo
+8IjL5UwariJ2xKZhl8kSHUED6ViTIcFAUIEpKMAQZB2IBEEkKRpQDKbOiEHL8RjM
+nI4ckkctVmOXwIi9f+D/s+/oiBxGigkBxKpiAglLRJZ5DSKiyLpqYE2AHtAhdhjV
+kBF0jGKTOobFNeVyrB6jBvGi9Xr5C5NnWDWMH7Et1zKsEHsLum7E8Xtctz7igdcR
+PfBbJqDTMGZZMkaM2A61wpxfYEjDpZ6uIGkCkCVRUnM5UhehNglQDyGrisaz5f1D
+YkxSNiSCDR0AgSisXahhTWTZEFXRCTCgrPIsCSzzsqZBQ9IUXlVNExKF5UQEBAHn
+NVYbtji/xGyiKibp0KowcqM24Zp6r1SM9sUl+caOGeXNmC8pcfyfyXvzPeFnWfTE
+g8uVXV2PCn8sLGgTH46LFHducgZLbr87fKEya2noY+PJbhCiu4fOXb82CFvrM8YO
+n0v70DJ9ccbR5yUpZ1eK6qIzc75+ybcPXdxQn97ZfXtiqr+i7ua7LcqSkrlFfeff
+zvyZ5rtQdncCzlyfcamWFvY4L/bTZ7mPZw0Vvz5wenVR9MaySf1PH/R+G50iruiY
+9qz8Pt+VM3nG962z15x4v3n+dj37zsuWzHvlzTOfXM2KVZ7FG9YuiE+vPTixeXbp
+3i1ZQ6XtyQMVSU3Sto19+Ufiaz6tSiyS3g9kJ+wZ2pndMSWY5m7ckb7rlR1c/mLf
+8ILubXl5/upT7f2t83Jupvb3NB7/BT8eQyM=
+=PT/C
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/davidfisco
+
+==================================================================
+ 
